@@ -1,4 +1,4 @@
-![DevOp](https://cdn.educba.com/academy/wp-content/uploads/2019/08/devops-architecture-1.png)
+<img src="https://cdn.educba.com/academy/wp-content/uploads/2019/08/devops-architecture-1.png" width="1500" height="300">
 
 ## What's DevOps
 DevOps is the combination of cultural philosophies, practices, and tools that increases an organization's ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes.
