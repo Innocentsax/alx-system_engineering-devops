@@ -9,7 +9,9 @@ DevOps is the combination of cultural philosophies, practices, and tools that in
 * The key principles of DevOps include automation, collaboration, monitoring, and measurement. Automation involves automating as much of the software development process as possible to reduce manual errors and increase efficiency. Collaboration involves breaking down silos between development and operations teams, promoting cross-functional communication and teamwork. Monitoring involves continuously monitoring the software development process and application performance to identify and address issues as quickly as possible. Measurement involves collecting and analyzing data to measure performance and identify areas for improvement.
 
 ## ***DevOps Tools...***
-![DevOps Tools](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUNLscAlbR-vZh4AupxD8YmZMHsIUE9R2eYA&usqp=CAU)![DevOps Tools](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4bS0rsaVVoKhAbrIAc2uBjQ_1XqiaXvmHxw&usqp=CAU)
+<!--![DevOps Tools](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUNLscAlbR-vZh4AupxD8YmZMHsIUE9R2eYA&usqp=CAU)
+![DevOps Tools](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4bS0rsaVVoKhAbrIAc2uBjQ_1XqiaXvmHxw&usqp=CAU)-->
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4bS0rsaVVoKhAbrIAc2uBjQ_1XqiaXvmHxw&usqp=CAU" width="1500" height="300">
 
 * Some common DevOps tools and technologies include continuous integration and continuous delivery (CI/CD), containerization (using tools like Docker and Kubernetes), infrastructure as code (IaC), and cloud computing. DevOps also involves cultural and organizational changes, including creating a culture of trust and collaboration, empowering teams to take ownership of their work, and embracing failure as an opportunity to learn and improve.
 
@@ -17,3 +19,4 @@ DevOps is the combination of cultural philosophies, practices, and tools that in
 
 ## Author
 © ___[INNOCENT CHARLES UDO](https://github.com/Innocentsax)___
+
