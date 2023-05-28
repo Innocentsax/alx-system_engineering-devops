@@ -45,3 +45,6 @@ Web Applications Infrastructure/Web Infrastructure also called internet infrastr
 - 3 firewalls
 - 1 SSL certificate to serve www.foobar.com over HTTPS
 - 3 monitoring clients (data collector for Sumologic or other monitoring services)
+
+## Author
+### ___[UDO INNOCENT CHARLES](https://github.com/Innocentsax)___
