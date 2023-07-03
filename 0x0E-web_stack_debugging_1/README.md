@@ -1,5 +1,7 @@
 # 0x0E Web stack debugging #1 :wrench:
 
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCr1U_4zHjKIB1fqzw6Ce5JTqDLoeCBWLW5w&usqp=CAU" width="1000" height="280">
+
 > Debugging is the process of finding and fixing errors in software that prevents it from running correctly. As you become a more advanced programmer and an industry engineer, you will learn how to use debugging tools such as gdb or built-in tools that IDEs have. However, it’s important to understand the concepts and processes of debugging manually. This project covers a second part of the optimal framework and blueprint for debugging web stack (remote containers this scenario) bugs
 
 Challenge:
