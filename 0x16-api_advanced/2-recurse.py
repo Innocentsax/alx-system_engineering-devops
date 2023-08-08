@@ -1,28 +1,45 @@
 #!/usr/bin/python3
 """
-Using reddit's API
-"""
 import requests
-after = None
 
+def count_words(subreddit, word_list, after=None, word_counts=None):
+    if word_counts is None:
+        word_counts = {}
 
-def recurse(subreddit, hot_list=[]):
-    """returning top ten post titles recursively"""
-    global after
-    user_agent = {'User-Agent': 'api_advanced-project'}
-    url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
-    parameters = {'after': after}
-    results = requests.get(url, params=parameters, headers=user_agent,
-                           allow_redirects=False)
-
-    if results.status_code == 200:
-        after_data = results.json().get("data").get("after")
-        if after_data is not None:
-            after = after_data
-            recurse(subreddit, hot_list)
-        all_titles = results.json().get("data").get("children")
-        for title_ in all_titles:
-            hot_list.append(title_.get("data").get("title"))
-        return hot_list
+    if after is None:
+        url = f'https://www.reddit.com/r/{subreddit}/hot.json'
     else:
-        return (None)
+        url = f'https://www.reddit.com/r/{subreddit}/hot.json?after={after}'
+
+    headers = {'User-Agent': 'Reddit API Example'}
+    response = requests.get(url, headers=headers)
+
+    if response.status_code != 200:
+        print("Invalid subreddit or other error occurred.")
+        return
+
+    data = response.json()['data']
+    posts = data['children']
+
+    for post in posts:
+        title = post['data']['title']
+        for word in word_list:
+            word_lower = word.lower()
+            title_lower = title.lower()
+            if title_lower.count(word_lower):
+                if word_lower in word_counts:
+                    word_counts[word_lower] += title_lower.count(word_lower)
+                else:
+                    word_counts[word_lower] = title_lower.count(word_lower)
+
+    after = data['after']
+    if after is not None:
+        count_words(subreddit, word_list, after, word_counts)
+    else:
+        sorted_word_counts = sorted(word_counts.items(), key=lambda x: (-x[1], x[0]))
+        for word, count in sorted_word_counts:
+            print(f"{word}: {count}")
+
+# Call the function with the subreddit and a list of keywords
+#count_words('python', ['python', 'java', 'javascript'])
+
